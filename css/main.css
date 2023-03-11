@@ -1,0 +1,187 @@
+:root {
+  --main-color: #74a84a;
+  --second-color: #2c541d;
+  --third-color: #000000;
+  --fourth-color: #585858;
+  --five-color: #f6f8f5;
+  --body-font: "serif";
+}
+
+button {
+  background-color: var(--main-color);
+}
+button:hover {
+  background-color: var(--second-color);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.landing {
+  background-image: url("../imgs/hero-bg.jpg");
+  height: calc(100vh - 150px);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.landing .navbar-toggler {
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.landing .navbar-toggler:hover {
+  background-color: var(--second-color);
+}
+.landing .navbar-toggler .navbar-toggler-icon {
+  color: white;
+}
+.landing .navbar-collapse.show {
+  margin-top: 10px;
+  position: relative;
+  z-index: 100;
+  background-color: #eee;
+  overflow: hidden;
+  border-radius: 17px;
+}
+.landing .navbar-collapse.show li {
+  border-bottom: 1px solid black;
+}
+.landing .navbar-collapse.show a {
+  color: black;
+}
+.landing .navbar-collapse.show a:hover {
+  background-color: #444;
+}
+.landing .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.54);
+}
+.landing .landing-text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+.landing .landing-text div {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.landing .landing-text div::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: var(--main-color);
+  width: 100px;
+  height: 5px;
+}
+.landing .landing-text h1 {
+  font-size: 60px;
+  padding: 30px 0;
+  font-weight: bold;
+}
+
+.comment {
+  height: 150px;
+  padding: 20px;
+  background-color: var(--five-color);
+}
+
+.events h2 {
+  position: relative;
+  font-weight: bolder;
+  padding: 20px 0;
+}
+.events h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  background-color: var(--main-color);
+  width: 100px;
+  height: 3px;
+}
+
+.expolre {
+  height: 600px;
+  background-image: url("../imgs/section-bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.expolre .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.expolre .text {
+  width: 500px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+.expolre .text h2 {
+  font-size: 35px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 20px;
+}
+.expolre .text h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  background-color: var(--main-color);
+  width: 100px;
+  height: 3px;
+}
+.expolre .text p {
+  line-height: 2;
+}
+
+.tours h3 {
+  font-size: 35px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 20px;
+}
+.tours h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--main-color);
+  width: 100px;
+  height: 3px;
+}

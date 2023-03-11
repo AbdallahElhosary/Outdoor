@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+}
+
+:root {
+  --main-color: #74a84a;
+  --second-color: #2c541d;
+  --third-color: #000000;
+  --fourth-color: #585858;
+  --five-color: #f6f8f5;
+  --body-font: "serif";
+}
+
+.landing {
+  background-image: url("../../imgs/about-bg-5.jpg");
+  height: 600px;
+}
+
+.mission h4 {
+  position: relative;
+}
+.mission h4::before {
+  content: "";
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  position: absolute;
+}
+.mission .list-item {
+  position: relative;
+}
+.mission .list-item::before {
+  content: "";
+  background-color: var(--main-color);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 14px;
+  height: 3px;
+  position: absolute;
+}

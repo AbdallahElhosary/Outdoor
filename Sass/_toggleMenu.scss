@@ -1,0 +1,257 @@
+@use "./mixins" as *;
+
+$toggleWidth: 330px;
+
+:root {
+    --main-color: #74a84a;
+    --second-color: #2c541d;
+    --third-color: #000000;
+    --fourth-color: #585858;
+    --five-color: #f6f8f5;
+    --body-font: "serif";
+}
+
+body {
+    transition: 0.3s;
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: black;
+}
+
+.head-color {
+    color: var(--third-color);
+}
+
+.main-color {
+    background-color: var(--main-color);
+}
+.first-color{
+    color: var(--main-color);
+}
+.fourth-color {
+    color: var(--fourth-color);
+}
+
+.list-border {
+    border: 1px solid #ddd;
+}
+
+.main-head {
+    position: relative;
+    color: var(--third-color);
+    font-weight: bold;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--main-color);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.toggle-menu {
+    width: $toggleWidth;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    right: -0px;
+    top: 0;
+    transition: 1s;
+
+    &.hide-toggle {
+        right: -$toggleWidth;
+    }
+
+    .toggler-text {
+        position: absolute;
+        display: flex;
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        color: #2563eb;
+        background-color: white;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 5px 0px 0 5px;
+        top: 200px;
+
+        &:hover {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        i {
+            font-size: 17px;
+            text-align: center;
+            width: 25%;
+        }
+
+        span {
+            width: 70%;
+            font-size: 18px;
+            // text-align: center;
+        }
+    }
+
+    .header {
+        @include flex-box();
+        padding: 5px 10px;
+        box-shadow: 9px -1px 8px 0px #555;
+        margin-bottom: 20px;
+
+        i {
+            width: 22px;
+            height: 22px;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ddd;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                border-color: black;
+            }
+        }
+    }
+
+    .container {
+        .try {
+            @include flex-box();
+
+            div {
+
+                font : {
+                    size: 18px;
+                    weight: bold;
+                }
+            }
+        }
+
+        .colors {
+            .list {
+                margin-bottom: 5px;
+                cursor: pointer;
+                height: 40px;
+                transition: 0.3s;
+
+                &:hover {
+                    border-color: #2563eb;
+                }
+
+                &.active {
+                    border-color: #2563eb;
+                }
+
+                &.lists {
+                    width: calc(50% - 5px)
+                }
+
+                @include flex-box();
+
+                >div {
+                    font-size: 13px;
+                }
+
+                ul {
+                    @include flex-box();
+                    margin-top: 16px;
+
+                    li {
+                        width: 18px;
+                        height: 18px;
+                        margin-left: 3px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+        }
+
+        .fonts {
+            .font-element {
+                cursor: pointer;
+
+                &:nth-child(1) {
+                    font-family: 'Times New Roman', Times, serif;
+                }
+
+                &:nth-child(2) {
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                }
+
+                &:nth-child(3) {
+                    font-family: sans-serif;
+                }
+
+                &:nth-child(4) {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+
+                &:nth-child(5) {
+                    font-family: "poppins";
+                }
+
+                &:nth-child(6) {
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+
+                &:nth-child(7) {
+                    font-family: monospace;
+                }
+
+                &:nth-child(8) {
+                    font-family: 'Roboto Condensed', sans-serif;
+                }
+
+                &:nth-child(9) {
+                    font-family: 'Oswald', sans-serif;
+                }
+
+            }
+
+            .lists {
+                width: calc(25% - 5px);
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    border-color: #2563eb;
+                    color: #2563eb;
+                }
+
+            }
+
+            .active {
+                border-color: #2563eb;
+            }
+
+        }
+    }
+}
+
+.toggler-text-pos {
+    left: -150px;
+    transition: 1s;
+}

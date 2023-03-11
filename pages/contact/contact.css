@@ -1,0 +1,60 @@
+:root {
+  --main-color: #74a84a;
+  --second-color: #2c541d;
+  --third-color: #000000;
+  --fourth-color: #585858;
+  --five-color: #f6f8f5;
+  --body-font: "serif";
+  --swiper-theme-color:var(var(--main-color));
+}
+
+.landing {
+  background-image: url("../../imgs/contact-bg-2.jpg");
+  background-size: contain;
+  height: 450px;
+}
+
+.contact form input,
+.contact form textarea {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 15px 10px;
+}
+.contact form textarea {
+  height: 130px;
+}
+.contact .text h4 {
+  font-weight: bold;
+}
+.contact .text p {
+  font-size: 18px;
+}
+.contact .text .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .text .icons i {
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5px;
+  font-size: 22px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.contact .text .icons i:hover {
+  color: var(--fourth-color);
+}

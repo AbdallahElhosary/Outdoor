@@ -1,0 +1,44 @@
+:root {
+  --main-color: #74a84a;
+  --second-color: #2c541d;
+  --third-color: #000000;
+  --fourth-color: #585858;
+  --five-color: #f6f8f5;
+  --body-font: "serif";
+  --swiper-theme-color:var(var(--main-color));
+}
+
+.landing{
+    background-image: url("../../imgs/project-background.jpg");
+    background-size: contain;
+    height: 450px;
+}
+
+.swiper {
+  height: 350px;
+  margin-top: 20px;
+  position: relative;
+  .swiper-slide{
+    height: 350px;
+    margin-right: 10px;
+    img{
+      width: 96%;
+      height: 95%;
+      margin-left: 2%;
+      border-radius: 15px;
+    }
+  }
+  .swiper-pagination{
+    position: absolute;
+    bottom: -5px !important;
+    z-index: 100 !important;
+    span.wiper-pagination-bullet{
+      color: black;
+      background-color: black;
+    }
+  }
+}
+
+.wintersport{
+   background-color: var(--five-color);
+}

@@ -1,0 +1,57 @@
+:root {
+  --main-color: #74a84a;
+  --second-color: #2c541d;
+  --third-color: #000000;
+  --fourth-color: #585858;
+  --five-color: #f6f8f5;
+  --body-font: "serif";
+  --swiper-theme-color:var(var(--main-color));
+}
+
+.landing{
+    background-image: url("../../imgs/contact-bg-2.jpg");
+    background-size: contain;
+    height: 450px;
+}
+
+.contact{
+    form{
+        input,
+        textarea{
+        background-color: #eee;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 15px 10px;
+        }
+        textarea{
+            height: 130px;
+        }
+    }
+    .text{
+        h4{
+            font-weight: bold;
+        }
+        p{
+            font-size: 18px;
+        }
+        .icons{
+            display: flex;
+            i{
+                width: 40px;
+                height: 40px;
+                background-color: var(--main-color);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 5px;
+                font-size: 22px;
+                transition: 0.5s;
+                cursor: pointer;
+                &:hover{
+                    color: var(--fourth-color);
+                }
+            }
+        }
+    }
+}

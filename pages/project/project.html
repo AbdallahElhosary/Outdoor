@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/toggleMenu.css">
+    <link rel="stylesheet" href="../project/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="icon" href="../../imgs/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Outdoor Adventure</title>
+</head>
+
+<body>
+    <div class="toggle-menu position-fixed hide-toggle">
+        <p class="toggler-text">
+            <i class="fa-solid fa-palette toggler-icon"></i>
+            <span>Customize</span>
+        </p>
+        <div class="header">
+            <h4>Love Nature</h4>
+
+            <i class="fa-solid fa-xmark close-toggle"></i>
+        </div>
+        <div class="container">
+            <p>Use the template as-is or try different colors and fonts from the options below.</p>
+            <div class="try my-3">
+                <div>Try Other Colors</div>
+                <a href="#" class="defaultButton">Default</a>
+            </div>
+            <div class="colors container">
+                <div class="row  d-flex justify-content-between">
+                    <div class="default-color list active  col-12 p-1 my-2 list-border">
+                        <div>DEFAULT COLORS</div>
+                        <ul class="colors-list">
+                            <li class="main-color"></li>
+                            <li class="second-color"></li>
+                            <li class="third-color"></li>
+                            <li class="fourth-color"></li>
+                            <li class="five-color"></li>
+                        </ul>
+                    </div>
+                    <div class="second-list list lists  col-6  list-border">
+                        <ul class="colors-list w-100 p-0 p-1">
+                            <li class="main-color"></li>
+                            <li class="second-color"></li>
+                            <li class="third-color"></li>
+                            <li class="fourth-color"></li>
+                            <li class="five-color"></li>
+                        </ul>
+                        </ul>
+                    </div>
+                    <div class="third-list list lists  col-6 list-border">
+                        <ul class="colors-list w-100 p-0 p-1">
+                            <li class="main-color"></li>
+                            <li class="second-color"></li>
+                            <li class="third-color"></li>
+                            <li class="fourth-color"></li>
+                            <li class="five-color"></li>
+                        </ul>
+                        </ul>
+                    </div>
+                    <div class="fourth-list list lists  col-6  list-border">
+                        <ul class="colors-list w-100 p-0 p-1">
+                            <li class="main-color"></li>
+                            <li class="second-color"></li>
+                            <li class="third-color"></li>
+                            <li class="fourth-color"></li>
+                            <li class="five-color"></li>
+                        </ul>
+                        </ul>
+                    </div>
+                    <div class="five-list list lists  col-6  list-border">
+                        <ul class="colors-list w-100 p-0 p-1">
+                            <li class="main-color"></li>
+                            <li class="second-color"></li>
+                            <li class="third-color"></li>
+                            <li class="fourth-color"></li>
+                            <li class="five-color"></li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="try mb-4">
+                <div>Try Other Fonts</div>
+                <a href="#" class="defaultButton">Default</a>
+            </div>
+            <div class="fonts container  d-flex justify-content-between ">
+                <div class="row d-flex justify-content-between ">
+                    <div class="col-12 text-center list-border p-1 list mb-2 active w-100 fs-5 fw-bold font-element"
+                        onclick="ChangeFont(this)">
+                        <span>DM Sans / DM Sans</span>
+                    </div>
+                    <div class="text-center list-border p-1  lists mb-2  fs-5 fw-bold font-element"
+                        onclick="ChangeFont(this)">
+                        <span>Aa</span>
+                    </div>
+                    <div class="text-center list-border p-1  lists mb-2   fs-5 fw-bold font-element"
+                        onclick="ChangeFont(this)">
+                        <span>Aa</span>
+                    </div>
+                    <div class="text-center list-border p-1  lists mb-2   fs-5 fw-bold font-element"
+                        onclick="ChangeFont(this)">
+                        <span>Aa</span>
+                    </div>
+                    <div class="text-center list-border p-1  lists mb-2   fs-5 fw-bold font-element"
+                        onclick="ChangeFont(this)">
+                        <span>Aa</span>
+                    </div>
+                    <div class="text-center list-border p-1  lists mb-2   fs-5 fw-bold font-element"
+                        onclick="ChangeFont(this)">
+                        <span>Aa</span>
+                    </div>
+                    <div class="text-center list-border p-1  lists mb-2   fs-5 fw-bold font-element"
+                        onclick="ChangeFont(this)">
+                        <span>Aa</span>
+                    </div>
+                    <div class="text-center list-border p-1  lists mb-2   fs-5 fw-bold font-element"
+                        onclick="ChangeFont(this)">
+                        <span>Aa</span>
+                    </div>
+                    <div class="text-center list-border p-1  lists mb-2   fs-5 fw-bold font-element"
+                        onclick="ChangeFont(this)">
+                        <span>Aa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="landing">
+        <div class="overlay"></div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark pt-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../../imgs/white-logo-150x42.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav fs-4 text-white">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../about/about.html">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../services/services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../project/project.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../contact/contact.html">Cotnact</a>
+                            </li>
+                            <button class="btn btn-dark rounded-pill"> Take Action</button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <div class="landing-text text-white fw-bold">
+            <h1 class="text-uppercase">Our Projects</h1>
+        </div>
+    </div>
+
+    <div class="waterSport pt-5 pb-5">
+        <div class="container">
+            <span>Adventure</span>
+            <h1>WATER SPORTS</h1>
+            <p>Interdum exercitation penatibus, praesentium facilisi accusamus fermentum, sagittis.</p>
+        </div>
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="../../imgs/water-sports-02.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../imgs/water-sports-03.jpg" alt="">
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../imgs/water-sports-04.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../imgs/camp-1.jpg" alt="">
+
+                    </div>
+
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wintersport pt-5 pb-5">
+        <div class="container">
+            <span>Snow Adventure</span>
+            <h1>WINTER SPORTS</h1>
+            <p>Interdum exercitation penatibus, praesentium facilisi accusamus fermentum, sagittis.</p>
+        </div>
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="../../imgs/winter-sports-01.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../imgs/winter-sports-02.jpg" alt="">
+                    
+                    
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../imgs/winter-sports-03.jpg" alt="">
+                    
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../imgs/winter-sports-04.jpg" alt="">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="camping pt-5 pb-5">
+        <div class="container">
+            <span>Forest Tours</span>
+            <h1>CAMPING</h1>
+            <p>Interdum exercitation penatibus, praesentium facilisi accusamus fermentum, sagittis.</p>
+        </div>
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="../../imgs/water-sports-02.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../imgs/camp-1.jpg" alt="">
+
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../imgs/camp-2.jpg" alt="">
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../imgs/camp-3.jpg" alt="">
+                    </div>
+
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="fs-5 pb-2">123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com
+            </p>
+            <p class="fs-5">Copyright © 2023 Outdoor Adventure</p>
+        </div>
+    </footer>
+
+    
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/toggleMenu.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            slidesPerView: 1,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+        });
+    </script>
+</body>
+
+</html>

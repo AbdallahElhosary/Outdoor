@@ -1,0 +1,46 @@
+:root {
+  --main-color: #74a84a;
+  --second-color: #2c541d;
+  --third-color: #000000;
+  --fourth-color: #585858;
+  --five-color: #f6f8f5;
+  --body-font: "serif";
+}
+
+.landing {
+  background-image: url("../../imgs/services-bg.jpg");
+  height: 550px;
+}
+
+.adventures h4 {
+  position: relative;
+}
+.adventures h4::before {
+  content: "";
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  position: absolute;
+}
+
+.what {
+  background-color: var(--five-color);
+}
+.what .list-item {
+  position: relative;
+}
+.what .list-item::before {
+  content: "";
+  background-color: var(--main-color);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 14px;
+  height: 3px;
+  position: absolute;
+}
