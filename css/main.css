@@ -21,7 +21,7 @@ button:hover {
 
 .landing {
   background-image: url("../imgs/hero-bg.jpg");
-  height: calc(100vh - 150px);
+  height: calc(100vh);
   background-attachment: fixed;
   background-size: cover;
   position: relative;
@@ -78,7 +78,7 @@ button:hover {
 }
 .landing .landing-text div {
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   padding-bottom: 20px;
 }
@@ -94,7 +94,7 @@ button:hover {
   height: 5px;
 }
 .landing .landing-text h1 {
-  font-size: 60px;
+  font-size: 30px;
   padding: 30px 0;
   font-weight: bold;
 }
@@ -140,7 +140,6 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .expolre .text {
-  width: 500px;
   color: white;
   position: absolute;
   left: 50%;
@@ -150,7 +149,7 @@ button:hover {
   text-align: center;
 }
 .expolre .text h2 {
-  font-size: 35px;
+  font-size: 20px;
   font-weight: bold;
   position: relative;
   padding-bottom: 20px;
@@ -168,6 +167,8 @@ button:hover {
 }
 .expolre .text p {
   line-height: 2;
+  width: fit-content;
+  text-align: center;
 }
 
 .tours h3 {
